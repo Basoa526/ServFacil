@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Adicionar Agendamento - ServFácil</title>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo">
+        <a href="index.html" class="titulo">
+          <h1><span class="serv">Serv</span><span class="facil">Fácil</span></h1>
+        </a>
+      </div>
+      <div class="menu-links">
+        <div class="links">
+          <a href="index.html">Início</a>
+          <a href="clientes.html">Clientes</a>
+          <a href="orcamento.html">Orçamentos</a>
+          <a href="produtos.html">Produtos</a>
+          <a href="servicos.html">Serviços</a>
+          <a class="ativo" href="agenda.html">Agenda de Serviços</a>
+          <a href="trabalhos.html">Fila de Trabalhos</a>
+          <a href="lembretes.html">Lembretes</a>
+        </div>
+        <div class="links">
+          <a href="#" class="botaosair">Sair</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="conteudo">
+      <h1>Novo Agendamento</h1>
+      <form action="AgendaServlet" method="post">
+        <label>Cliente:</label><br>
+        <input type="text" name="cliente" required><br><br>
+
+        <label>Serviço:</label><br>
+        <input type="text" name="servico" required><br><br>
+
+        <label>Data:</label><br>
+        <input type="date" name="data" required><br><br>
+
+        <label>Horário:</label><br>
+        <input type="time" name="hora" required><br><br>
+
+        <input type="submit" value="Salvar">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

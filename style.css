@@ -1,0 +1,151 @@
+html body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.container .sidebar {
+    background-color: #2b2a2a;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo {
+    font-size: 1.4em;
+    background-color: #000;
+    background-image: linear-gradient(#000, #2b2b2b);
+}
+
+.logo .titulo {
+    text-decoration: none;
+}
+
+.titulo h1:hover {
+    background-color: #4b4b4b;
+    background-image: linear-gradient(#4b4b4b, #8b8b8b);
+}
+
+.titulo h1 {
+    padding: 10px 20px 10px 10px;
+    margin: 0;
+}
+
+.titulo h1 .serv {
+    color: powderblue;
+}
+
+.titulo h1 .facil {
+    color: #ff68ff;
+}
+
+.sidebar .menu-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.menu-links .links {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    padding: 10px;
+    text-shadow: 3px 3px 4px #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.links .botaosair {
+    padding: 10px;
+    text-shadow: 3px 3px 4px #000;
+    color: #ff0000;
+}
+
+.links a:hover,
+.links a.ativo 
+{
+    background-color: #8b8b8b;
+}
+
+.conteudo {
+    background-color: #757575;
+    flex: 1;
+    padding: 10px;
+}
+
+.conteudo .titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.conteudo .card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.acoes {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.acoes .botao {
+    border: 1px solid #fff;
+    background-color: #fd049e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.acoes.botao:hover {
+    background-color: #fd049e;
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+
+    & label {
+        color: indigo;
+    }
+
+    & input, & select {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex: 1;
+}
